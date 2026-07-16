@@ -1,0 +1,47 @@
+{
+  "moduleId": "meta-overlayfs",
+  "moduleName": "OverlayFS MetaModule",
+  "authors": [
+    {
+      "name": "KernelSU Developers",
+      "link": "https://github.com/KernelSU-Modules-Repo"
+    }
+  ],
+  "summary": "OverlayFS MetaModule",
+  "updatedAt": "2025-12-02T00:00:00Z",
+  "createdAt": "2025-12-02T00:00:00Z",
+  "stargazerCount": 418,
+  "metamodule": true,
+  "latestRelease": "1.3.1",
+  "url": "https://irislys.github.io/MakoSU_ModuleDownload/module/meta-overlayfs/",
+  "homepageUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs",
+  "sourceUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs",
+  "latestReleaseTime": "2025-12-02T00:00:00Z",
+  "latestBetaReleaseTime": null,
+  "latestSnapshotReleaseTime": null,
+  "readme": "# OverlayFS MetaModule\n\nOverlayFS MetaModule\n",
+  "readmeHTML": "<h1>OverlayFS MetaModule</h1>\n<p>OverlayFS MetaModule</p>",
+  "releases": [
+    {
+      "name": "1.3.1",
+      "url": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/tag/v1",
+      "descriptionHTML": "<p>OverlayFS MetaModule</p>",
+      "createdAt": "2025-12-02T00:00:00Z",
+      "publishedAt": "2025-12-02T00:00:00Z",
+      "updatedAt": "2025-12-02T00:00:00Z",
+      "tagName": "v1",
+      "isPrerelease": false,
+      "releaseAssets": [
+        {
+          "name": "meta-overlayfs-13100-1.3.1.zip",
+          "contentType": "application/zip",
+          "downloadUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/v1.3.1/meta-overlayfs-13100-1.3.1.zip",
+          "downloadCount": 58970,
+          "size": 451415
+        }
+      ],
+      "version": "1.3.1",
+      "versionCode": "1"
+    }
+  ]
+}

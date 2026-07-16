@@ -1,0 +1,47 @@
+{
+  "moduleId": "tricky_store",
+  "moduleName": "TEESimulator",
+  "authors": [
+    {
+      "name": "JingMatrix",
+      "link": "https://github.com/JingMatrix"
+    }
+  ],
+  "summary": "Software simulation for Android hardware-backed key pairs with key attestation",
+  "updatedAt": "2026-03-07T00:00:00Z",
+  "createdAt": "2026-03-07T00:00:00Z",
+  "stargazerCount": 1943,
+  "metamodule": false,
+  "latestRelease": "v3.2 (67-1f8412d-release)",
+  "url": "https://irislys.github.io/MakoSU_ModuleDownload/module/tricky_store/",
+  "homepageUrl": "https://github.com/JingMatrix/TEESimulator",
+  "sourceUrl": "https://github.com/JingMatrix/TEESimulator",
+  "latestReleaseTime": "2026-03-07T00:00:00Z",
+  "latestBetaReleaseTime": null,
+  "latestSnapshotReleaseTime": null,
+  "readme": "# TEESimulator\n\nSoftware simulation for Android hardware-backed key pairs with key attestation\n",
+  "readmeHTML": "<h1>TEESimulator</h1>\n<p>Software simulation for Android hardware-backed key pairs with key attestation</p>",
+  "releases": [
+    {
+      "name": "v3.2 (67-1f8412d-release)",
+      "url": "https://github.com/JingMatrix/TEESimulator/releases/tag/v8412",
+      "descriptionHTML": "<p>Software simulation for Android hardware-backed key pairs with key attestation</p>",
+      "createdAt": "2026-03-07T00:00:00Z",
+      "publishedAt": "2026-03-07T00:00:00Z",
+      "updatedAt": "2026-03-07T00:00:00Z",
+      "tagName": "v8412",
+      "isPrerelease": false,
+      "releaseAssets": [
+        {
+          "name": "TEESimulator-v3.2-67-Release.zip",
+          "contentType": "application/zip",
+          "downloadUrl": "https://github.com/JingMatrix/TEESimulator/releases/download/v3.2/TEESimulator-v3.2-67-Release.zip",
+          "downloadCount": 35341,
+          "size": 1883723
+        }
+      ],
+      "version": "v3.2 (67-1f8412d-release)",
+      "versionCode": "8412"
+    }
+  ]
+}

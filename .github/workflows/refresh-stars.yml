@@ -21,108 +21,17 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Detect modules.json change
-        id: catalog
-        run: |
-          set -euo pipefail
-          NEED_REFRESH=false
-          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            NEED_REFRESH=true
-          elif [ "${{ github.event_name }}" = "push" ]; then
-            if git rev-parse --verify HEAD^ >/dev/null 2>&1; then
-              if git diff --name-only HEAD^ HEAD | grep -qx 'modules.json'; then
-                NEED_REFRESH=true
-              fi
-            else
-              # First commit / shallow edge: treat modules.json presence as changed
-              if [ -f modules.json ]; then
-                NEED_REFRESH=true
-              fi
-            fi
-          fi
-          echo "need_refresh=$NEED_REFRESH" >> "$GITHUB_OUTPUT"
-          echo "need_refresh=$NEED_REFRESH"
-
-      - name: Setup Python
-        if: steps.catalog.outputs.need_refresh == 'true'
+      - name: Validate and publish generated proxy files
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
-      - name: Refresh catalog metadata
-        if: steps.catalog.outputs.need_refresh == 'true'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 refresh_stars.py
-
-      - name: Commit and push if changed
-        if: steps.catalog.outputs.need_refresh == 'true'
-        run: |
-          set -euo pipefail
+      - run: python scripts/normalize_catalog.py
+      - run: python scripts/validate_catalog.py
+      - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add modules.json
-          if git diff --staged --quiet; then
-            echo "No module catalog changes"
-            exit 0
+          git add modules.json module site
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: refresh module proxy data"
+            git push
           fi
-          git commit -m "chore: refresh module catalog metadata"
-          git push
-
-      - name: Sync GitHub to Gitee
-        env:
-          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
-          EVENT_NAME: ${{ github.event_name }}
-        run: |
-          set -euo pipefail
-
-          if [ -z "${GITEE_TOKEN:-}" ]; then
-            echo "GITEE_TOKEN is not set; skip Gitee sync"
-            exit 0
-          fi
-
-          GITEE_REMOTE="https://JT22:${GITEE_TOKEN}@gitee.com/JT22/MakoSU_ModuleDownload.git"
-          git remote remove gitee 2>/dev/null || true
-          git remote add gitee "$GITEE_REMOTE"
-
-          force_sync() {
-            echo "Force pushing GitHub -> Gitee"
-            git push gitee HEAD:main --force
-            git push gitee --tags --force || true
-            echo "Gitee force sync completed"
-          }
-
-          # Any repository push: always force sync
-          if [ "$EVENT_NAME" = "push" ]; then
-            force_sync
-            exit 0
-          fi
-
-          # schedule / workflow_dispatch: keep original 24h consistency check
-          if ! git fetch gitee --prune; then
-            echo "Gitee fetch failed; force push full GitHub tree"
-            force_sync
-            exit 0
-          fi
-
-          if ! git rev-parse --verify gitee/main >/dev/null 2>&1; then
-            echo "Gitee main missing; force push full GitHub tree"
-            force_sync
-            exit 0
-          fi
-
-          DIFF_FILES="$(git diff --name-status HEAD gitee/main || true)"
-          if [ -z "$DIFF_FILES" ]; then
-            if [ "$(git rev-parse HEAD)" = "$(git rev-parse gitee/main)" ]; then
-              echo "GitHub and Gitee are identical"
-              exit 0
-            fi
-          fi
-
-          echo "Repositories diverge; forcing GitHub -> Gitee sync"
-          if [ -n "$DIFF_FILES" ]; then
-            echo "$DIFF_FILES"
-          else
-            echo "Commit SHAs differ: $(git rev-parse --short HEAD) vs $(git rev-parse --short gitee/main)"
-          fi
-          force_sync

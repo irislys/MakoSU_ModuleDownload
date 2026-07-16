@@ -1,0 +1,47 @@
+{
+  "moduleId": "hybrid_mount",
+  "moduleName": "Hybrid Mount",
+  "authors": [
+    {
+      "name": "Hybrid Mount Developers",
+      "link": "https://github.com/Hybrid-Mount"
+    }
+  ],
+  "summary": "Hybrid Mount Metamodule",
+  "updatedAt": "2026-06-28T00:00:00Z",
+  "createdAt": "2026-06-28T00:00:00Z",
+  "stargazerCount": 1315,
+  "metamodule": true,
+  "latestRelease": "4.2.0-1815",
+  "url": "https://irislys.github.io/MakoSU_ModuleDownload/module/hybrid_mount/",
+  "homepageUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount",
+  "sourceUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount",
+  "latestReleaseTime": "2026-06-28T00:00:00Z",
+  "latestBetaReleaseTime": null,
+  "latestSnapshotReleaseTime": null,
+  "readme": "# Hybrid Mount\n\nHybrid Mount Metamodule\n",
+  "readmeHTML": "<h1>Hybrid Mount</h1>\n<p>Hybrid Mount Metamodule</p>",
+  "releases": [
+    {
+      "name": "4.2.0-1815",
+      "url": "https://github.com/Hybrid-Mount/meta-hybrid_mount/releases/tag/v1815",
+      "descriptionHTML": "<p>Hybrid Mount Metamodule</p>",
+      "createdAt": "2026-06-28T00:00:00Z",
+      "publishedAt": "2026-06-28T00:00:00Z",
+      "updatedAt": "2026-06-28T00:00:00Z",
+      "tagName": "v1815",
+      "isPrerelease": false,
+      "releaseAssets": [
+        {
+          "name": "Hybrid-Mount-4.2.0-1815.zip",
+          "contentType": "application/zip",
+          "downloadUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount/releases/download/v4.2.0/Hybrid-Mount-4.2.0-1815.zip",
+          "downloadCount": 17603,
+          "size": 2161504
+        }
+      ],
+      "version": "4.2.0-1815",
+      "versionCode": "1815"
+    }
+  ]
+}

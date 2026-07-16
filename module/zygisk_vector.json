@@ -1,0 +1,47 @@
+{
+  "moduleId": "zygisk_vector",
+  "moduleName": "Vector",
+  "authors": [
+    {
+      "name": "JingMatrix",
+      "link": "https://github.com/JingMatrix"
+    }
+  ],
+  "summary": "Modern Xposed Framework",
+  "updatedAt": "2026-03-23T00:00:00Z",
+  "createdAt": "2026-03-23T00:00:00Z",
+  "stargazerCount": 11785,
+  "metamodule": false,
+  "latestRelease": "v2.0 (3021)",
+  "url": "https://irislys.github.io/MakoSU_ModuleDownload/module/zygisk_vector/",
+  "homepageUrl": "https://github.com/JingMatrix/Vector",
+  "sourceUrl": "https://github.com/JingMatrix/Vector",
+  "latestReleaseTime": "2026-03-23T00:00:00Z",
+  "latestBetaReleaseTime": null,
+  "latestSnapshotReleaseTime": null,
+  "readme": "# Vector\n\nModern Xposed Framework\n",
+  "readmeHTML": "<h1>Vector</h1>\n<p>Modern Xposed Framework</p>",
+  "releases": [
+    {
+      "name": "v2.0 (3021)",
+      "url": "https://github.com/JingMatrix/Vector/releases/tag/v3021",
+      "descriptionHTML": "<p>Modern Xposed Framework</p>",
+      "createdAt": "2026-03-23T00:00:00Z",
+      "publishedAt": "2026-03-23T00:00:00Z",
+      "updatedAt": "2026-03-23T00:00:00Z",
+      "tagName": "v3021",
+      "isPrerelease": false,
+      "releaseAssets": [
+        {
+          "name": "Vector-v2.0-3021-Release.zip",
+          "contentType": "application/zip",
+          "downloadUrl": "https://github.com/JingMatrix/Vector/releases/download/v2.0/Vector-v2.0-3021-Release.zip",
+          "downloadCount": 458086,
+          "size": 8434264
+        }
+      ],
+      "version": "v2.0 (3021)",
+      "versionCode": "3021"
+    }
+  ]
+}

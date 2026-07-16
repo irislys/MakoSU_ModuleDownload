@@ -1,0 +1,47 @@
+{
+  "moduleId": "magic_mount_rs",
+  "moduleName": "Magic Mount-rs",
+  "authors": [
+    {
+      "name": "mmrs developers",
+      "link": "https://github.com/Tools-cx-app"
+    }
+  ],
+  "summary": "An implementation of a metamodule using Magic Mount, Based on MKSU, Template is from meta-overlay.",
+  "updatedAt": "2026-07-13T00:00:00Z",
+  "createdAt": "2026-07-13T00:00:00Z",
+  "stargazerCount": 377,
+  "metamodule": true,
+  "latestRelease": "v4.0.5-821",
+  "url": "https://irislys.github.io/MakoSU_ModuleDownload/module/magic_mount_rs/",
+  "homepageUrl": "https://github.com/Tools-cx-app/meta-magic_mount-rs",
+  "sourceUrl": "https://github.com/Tools-cx-app/meta-magic_mount-rs",
+  "latestReleaseTime": "2026-07-13T00:00:00Z",
+  "latestBetaReleaseTime": null,
+  "latestSnapshotReleaseTime": null,
+  "readme": "# Magic Mount-rs\n\nAn implementation of a metamodule using Magic Mount, Based on MKSU, Template is from meta-overlay.\n",
+  "readmeHTML": "<h1>Magic Mount-rs</h1>\n<p>An implementation of a metamodule using Magic Mount, Based on MKSU, Template is from meta-overlay.</p>",
+  "releases": [
+    {
+      "name": "v4.0.5-821",
+      "url": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/tag/v821",
+      "descriptionHTML": "<p>An implementation of a metamodule using Magic Mount, Based on MKSU, Template is from meta-overlay.</p>",
+      "createdAt": "2026-07-13T00:00:00Z",
+      "publishedAt": "2026-07-13T00:00:00Z",
+      "updatedAt": "2026-07-13T00:00:00Z",
+      "tagName": "v821",
+      "isPrerelease": false,
+      "releaseAssets": [
+        {
+          "name": "magic_mount_rs-4.0.5-821-universal.zip",
+          "contentType": "application/zip",
+          "downloadUrl": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/download/v4.0.5/magic_mount_rs-4.0.5-821-universal.zip",
+          "downloadCount": 1943,
+          "size": 3037245
+        }
+      ],
+      "version": "v4.0.5-821",
+      "versionCode": "821"
+    }
+  ]
+}

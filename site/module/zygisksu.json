@@ -1,0 +1,47 @@
+{
+  "moduleId": "zygisksu",
+  "moduleName": "NeoZygisk",
+  "authors": [
+    {
+      "name": "JingMatrix",
+      "link": "https://github.com/JingMatrix"
+    }
+  ],
+  "summary": "Zygote injection with ptrace",
+  "updatedAt": "2026-02-14T00:00:00Z",
+  "createdAt": "2026-02-14T00:00:00Z",
+  "stargazerCount": 2064,
+  "metamodule": false,
+  "latestRelease": "v2.3 (275-671937c-release)",
+  "url": "https://irislys.github.io/MakoSU_ModuleDownload/module/zygisksu/",
+  "homepageUrl": "https://github.com/JingMatrix/NeoZygisk",
+  "sourceUrl": "https://github.com/JingMatrix/NeoZygisk",
+  "latestReleaseTime": "2026-02-14T00:00:00Z",
+  "latestBetaReleaseTime": null,
+  "latestSnapshotReleaseTime": null,
+  "readme": "# NeoZygisk\n\nZygote injection with ptrace\n",
+  "readmeHTML": "<h1>NeoZygisk</h1>\n<p>Zygote injection with ptrace</p>",
+  "releases": [
+    {
+      "name": "v2.3 (275-671937c-release)",
+      "url": "https://github.com/JingMatrix/NeoZygisk/releases/tag/v671937",
+      "descriptionHTML": "<p>Zygote injection with ptrace</p>",
+      "createdAt": "2026-02-14T00:00:00Z",
+      "publishedAt": "2026-02-14T00:00:00Z",
+      "updatedAt": "2026-02-14T00:00:00Z",
+      "tagName": "v671937",
+      "isPrerelease": false,
+      "releaseAssets": [
+        {
+          "name": "NeoZygisk-v2.3-275-release.zip",
+          "contentType": "application/zip",
+          "downloadUrl": "https://github.com/JingMatrix/NeoZygisk/releases/download/v2.3/NeoZygisk-v2.3-275-release.zip",
+          "downloadCount": 37324,
+          "size": 3208704
+        }
+      ],
+      "version": "v2.3 (275-671937c-release)",
+      "versionCode": "671937"
+    }
+  ]
+}

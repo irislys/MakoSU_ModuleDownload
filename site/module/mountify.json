@@ -1,0 +1,47 @@
+{
+  "moduleId": "mountify",
+  "moduleName": "mountify",
+  "authors": [
+    {
+      "name": "xx, KOWX712",
+      "link": "https://github.com/backslashxx"
+    }
+  ],
+  "summary": "Globally mounted modules via OverlayFS.",
+  "updatedAt": "2026-06-25T00:00:00Z",
+  "createdAt": "2026-06-25T00:00:00Z",
+  "stargazerCount": 1187,
+  "metamodule": true,
+  "latestRelease": "v2.0.3",
+  "url": "https://irislys.github.io/MakoSU_ModuleDownload/module/mountify/",
+  "homepageUrl": "https://github.com/backslashxx/mountify",
+  "sourceUrl": "https://github.com/backslashxx/mountify",
+  "latestReleaseTime": "2026-06-25T00:00:00Z",
+  "latestBetaReleaseTime": null,
+  "latestSnapshotReleaseTime": null,
+  "readme": "# mountify\n\nGlobally mounted modules via OverlayFS.\n",
+  "readmeHTML": "<h1>mountify</h1>\n<p>Globally mounted modules via OverlayFS.</p>",
+  "releases": [
+    {
+      "name": "v2.0.3",
+      "url": "https://github.com/backslashxx/mountify/releases/tag/v3",
+      "descriptionHTML": "<p>Globally mounted modules via OverlayFS.</p>",
+      "createdAt": "2026-06-25T00:00:00Z",
+      "publishedAt": "2026-06-25T00:00:00Z",
+      "updatedAt": "2026-06-25T00:00:00Z",
+      "tagName": "v3",
+      "isPrerelease": false,
+      "releaseAssets": [
+        {
+          "name": "mountify.zip",
+          "contentType": "application/zip",
+          "downloadUrl": "https://github.com/backslashxx/mountify/releases/download/203/mountify.zip",
+          "downloadCount": 14122,
+          "size": 555271
+        }
+      ],
+      "version": "v2.0.3",
+      "versionCode": "3"
+    }
+  ]
+}
