@@ -149,14 +149,14 @@ def generate_site(catalog: list[dict], details: list[dict]) -> None:
         write_json(SITE_DIR / "module" / f"{detail['moduleId']}.json", detail)
     page_script = """
 const root = document.querySelector('#app');
-const id = location.pathname.match(/module\/([^/]+)/)?.[1];
+const id = location.pathname.match(/module\/([^/]+)\/?$/)?.[1];
 const esc = value => String(value ?? '').replace(/[&<>\"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]));
 async function main() {
   const response = await fetch(id ? `module/${encodeURIComponent(id)}.json` : 'modules.json');
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const data = await response.json();
   if (id) {
-    root.innerHTML = `<p><a href="../">&larr; All modules</a></p><h1>${esc(data.moduleName)}</h1><p>${esc(data.summary)}</p><nav><a href="${esc(data.homepageUrl)}">Homepage</a> <a href="${esc(data.sourceUrl)}">Source</a></nav><section class="readme">${data.readmeHTML || '<p>No README provided.</p>'}</section><h2>Releases</h2>${(data.releases || []).map(r => `<article><h3>${esc(r.name)} <small>${esc(r.tagName)}</small></h3><p>${esc(r.publishedAt || '')}</p>${r.descriptionHTML || ''}<ul>${(r.releaseAssets || []).map(a => `<li><a href="${esc(a.downloadUrl)}">${esc(a.name)}</a> <small>${Number(a.size || 0).toLocaleString()} bytes, ${Number(a.downloadCount || 0).toLocaleString()} downloads</small></li>`).join('')}</ul></article>`).join('')}`;
+    root.innerHTML = `<p><a href="../../">&larr; All modules</a></p><h1>${esc(data.moduleName)}</h1><p>${esc(data.summary)}</p><nav><a href="${esc(data.homepageUrl)}">Homepage</a> <a href="${esc(data.sourceUrl)}">Source</a></nav><section class="readme">${data.readmeHTML || '<p>No README provided.</p>'}</section><h2>Releases</h2>${(data.releases || []).map(r => `<article><h3>${esc(r.name)} <small>${esc(r.tagName)}</small></h3><p>${esc(r.publishedAt || '')}</p>${r.descriptionHTML || ''}<ul>${(r.releaseAssets || []).map(a => `<li><a href="${esc(a.downloadUrl)}">${esc(a.name)}</a> <small>${Number(a.size || 0).toLocaleString()} bytes, ${Number(a.downloadCount || 0).toLocaleString()} downloads</small></li>`).join('')}</ul></article>`).join('')}`;
   } else {
     root.innerHTML = `<h1>MakoSU Modules</h1><p>KernelSU-compatible module directory.</p><div class="grid">${data.map(m => `<a class="card" href="module/${encodeURIComponent(m.moduleId)}/"><strong>${esc(m.moduleName)}</strong><span>${esc(m.summary)}</span><small>${esc(m.latestRelease?.name || '')} · ★ ${Number(m.stargazerCount || 0).toLocaleString()}</small></a>`).join('')}</div>`;
   }
