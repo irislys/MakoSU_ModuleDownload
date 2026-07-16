@@ -12,6 +12,7 @@
   "createdAt": "2026-03-07T00:00:00Z",
   "stargazerCount": 1943,
   "metamodule": false,
+  "repoUrl": "https://github.com/JingMatrix/TEESimulator",
   "latestRelease": "v3.2 (67-1f8412d-release)",
   "url": "https://irislys.github.io/MakoSU_ModuleDownload/module/tricky_store/",
   "homepageUrl": "https://github.com/JingMatrix/TEESimulator",
@@ -36,8 +37,8 @@
           "name": "TEESimulator-v3.2-67-Release.zip",
           "contentType": "application/zip",
           "downloadUrl": "https://github.com/JingMatrix/TEESimulator/releases/download/v3.2/TEESimulator-v3.2-67-Release.zip",
-          "downloadCount": 35341,
-          "size": 1883723
+          "downloadCount": 0,
+          "size": 0
         }
       ],
       "version": "v3.2 (67-1f8412d-release)",

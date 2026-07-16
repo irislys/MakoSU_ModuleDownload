@@ -12,6 +12,7 @@
   "createdAt": "2026-03-23T00:00:00Z",
   "stargazerCount": 11785,
   "metamodule": false,
+  "repoUrl": "https://github.com/JingMatrix/Vector",
   "latestRelease": "v2.0 (3021)",
   "url": "https://irislys.github.io/MakoSU_ModuleDownload/module/zygisk_vector/",
   "homepageUrl": "https://github.com/JingMatrix/Vector",
@@ -36,8 +37,8 @@
           "name": "Vector-v2.0-3021-Release.zip",
           "contentType": "application/zip",
           "downloadUrl": "https://github.com/JingMatrix/Vector/releases/download/v2.0/Vector-v2.0-3021-Release.zip",
-          "downloadCount": 458086,
-          "size": 8434264
+          "downloadCount": 0,
+          "size": 0
         }
       ],
       "version": "v2.0 (3021)",

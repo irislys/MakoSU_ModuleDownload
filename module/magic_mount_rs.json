@@ -12,6 +12,7 @@
   "createdAt": "2026-07-13T00:00:00Z",
   "stargazerCount": 377,
   "metamodule": true,
+  "repoUrl": "https://github.com/Tools-cx-app/meta-magic_mount-rs",
   "latestRelease": "v4.0.5-821",
   "url": "https://irislys.github.io/MakoSU_ModuleDownload/module/magic_mount_rs/",
   "homepageUrl": "https://github.com/Tools-cx-app/meta-magic_mount-rs",
@@ -36,8 +37,8 @@
           "name": "magic_mount_rs-4.0.5-821-universal.zip",
           "contentType": "application/zip",
           "downloadUrl": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/download/v4.0.5/magic_mount_rs-4.0.5-821-universal.zip",
-          "downloadCount": 1943,
-          "size": 3037245
+          "downloadCount": 0,
+          "size": 0
         }
       ],
       "version": "v4.0.5-821",

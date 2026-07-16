@@ -94,6 +94,7 @@ def normalize_module(module: dict) -> tuple[dict, dict]:
         "createdAt": release_time,
         "stargazerCount": int(module.get("stargazerCount", 0) or 0),
         "metamodule": bool(module.get("metamodule", False)),
+        "repoUrl": repo_url,
         "latestRelease": {
             "name": name,
             "time": release_time,
@@ -163,7 +164,7 @@ main().catch(error => { root.innerHTML = `<h1>Unable to load modules</h1><pre>${
     for detail in details:
         path = SITE_DIR / "module" / detail["moduleId"] / "index.html"
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text((SITE_DIR / "index.html").read_text(encoding="utf-8").replace("module/", "../module/"), encoding="utf-8")
+        path.write_text((SITE_DIR / "index.html").read_text(encoding="utf-8").replace("`module/${encodeURIComponent(id)}.json`", "`../../module/${encodeURIComponent(id)}.json`").replace("href=\"module/", "href=\"../../module/"), encoding="utf-8")
 
 
 if __name__ == "__main__":

@@ -12,6 +12,7 @@
   "createdAt": "2026-02-14T00:00:00Z",
   "stargazerCount": 2064,
   "metamodule": false,
+  "repoUrl": "https://github.com/JingMatrix/NeoZygisk",
   "latestRelease": "v2.3 (275-671937c-release)",
   "url": "https://irislys.github.io/MakoSU_ModuleDownload/module/zygisksu/",
   "homepageUrl": "https://github.com/JingMatrix/NeoZygisk",
@@ -36,8 +37,8 @@
           "name": "NeoZygisk-v2.3-275-release.zip",
           "contentType": "application/zip",
           "downloadUrl": "https://github.com/JingMatrix/NeoZygisk/releases/download/v2.3/NeoZygisk-v2.3-275-release.zip",
-          "downloadCount": 37324,
-          "size": 3208704
+          "downloadCount": 0,
+          "size": 0
         }
       ],
       "version": "v2.3 (275-671937c-release)",

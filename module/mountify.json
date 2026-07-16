@@ -12,6 +12,7 @@
   "createdAt": "2026-06-25T00:00:00Z",
   "stargazerCount": 1187,
   "metamodule": true,
+  "repoUrl": "https://github.com/backslashxx/mountify",
   "latestRelease": "v2.0.3",
   "url": "https://irislys.github.io/MakoSU_ModuleDownload/module/mountify/",
   "homepageUrl": "https://github.com/backslashxx/mountify",
@@ -36,8 +37,8 @@
           "name": "mountify.zip",
           "contentType": "application/zip",
           "downloadUrl": "https://github.com/backslashxx/mountify/releases/download/203/mountify.zip",
-          "downloadCount": 14122,
-          "size": 555271
+          "downloadCount": 0,
+          "size": 0
         }
       ],
       "version": "v2.0.3",

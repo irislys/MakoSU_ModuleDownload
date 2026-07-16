@@ -32,6 +32,8 @@ def main() -> None:
         detail = json.loads(detail_path.read_text(encoding="utf-8"))
         if detail.get("moduleId") != module_id:
             raise ValueError(f"detail id mismatch: {module_id}")
+        if not detail.get("homepageUrl") or not detail.get("sourceUrl"):
+            raise ValueError(f"{module_id} must define homepageUrl and sourceUrl")
         for key in ("url", "homepageUrl", "sourceUrl"):
             if detail.get(key):
                 require_url(detail[key], f"{module_id}.{key}")
